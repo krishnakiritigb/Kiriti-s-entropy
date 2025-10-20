@@ -1,0 +1,14 @@
+fastapi==0.115.5
+uvicorn[standard]==0.34.0
+python-dotenv==1.0.1
+pypdf2==3.0.1
+pydantic==2.10.3
+python-multipart==0.0.20
+pytest
+
+# LangChain dependencies (latest compatible versions)
+langchain
+langchain-community
+langchain-text-splitters
+langchain-ollama
+chromadb

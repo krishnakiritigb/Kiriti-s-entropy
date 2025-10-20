@@ -1,23 +1,174 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
+/src/**/__tests__
+/src/**/*.test.tsx
+/src/**/*.test.ts
+/backend/test_*.py
+/backend/**/__tests__
+*.test.js
+*.spec.js
+*.spec.ts
 
-# production
+# Production
 /build
 
-# misc
-.DS_Store
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+backend/venv/
+backend/env/
+
+# Environment Variables (CRITICAL - Never commit!)
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
+.env.development
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.env
+!.env.example
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Llama Models (large files)
+*.gguf
+*.bin
+models/
+
+# License
+LICENSE
+LICENSE.txt
+
+# Documentation of the whole app and planning phases
+/claude-pair-programmer
+
+# Additional documentation files
+PROJECT-STATUS.md
+DEPLOYMENT.md
+*.md
+!README.md
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+*.bak
+*.old
+*~
+.backup/
+
+# Docker (deployment configs - not pushed to git)
+Dockerfile
+Dockerfile.*
+docker-compose.yml
+.dockerignore
+*.dockerfile
+nginx.conf
+nginx-*.conf
+
+# Kubernetes (not pushed to git)
+/k8s/
+k8s.yaml
+*.k8s.yaml
+kustomization.yaml
+
+# Shell scripts (setup/deployment)
+*.sh
+!.husky/**/*.sh
+
+# Vercel
+.vercel
+vercel.json
+
+# Security - API Keys & Secrets (CRITICAL)
+# Never commit files with these patterns
+*secret*
+*credential*
+*password*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+id_rsa
+id_dsa
+
+# Database files (may contain sensitive data)
+*.db
+*.sqlite
+*.sqlite3
+db.json
+
+# Cloud provider credentials
+.aws/credentials
+.aws/config
+gcloud/credentials.db
+.azure/credentials
+
+# ChromaDB persistence (may contain embeddings)
+chroma_db/
+.chroma/
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+.tox/
+coverage/
+*.cover
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
