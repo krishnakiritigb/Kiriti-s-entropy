@@ -23,7 +23,8 @@ interface Message {
   timestamp: Date;
 }
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+// API URL will be relative for Vercel deployment
+const API_URL = process.env.REACT_APP_API_URL || '/api';
 
 /**
  * ChatWidget Component
@@ -147,7 +148,7 @@ export const ChatWidget: React.FC = () => {
               Chat with AI
             </Typography>
             <Tooltip
-              title="Note: This is a small AI model . It may occasionally hallucinate or provide inaccurate information. Larger models provide better accuracy."
+              title="Powered by Groq AI - Fast and efficient language model. May occasionally provide inaccurate information."
               arrow
               placement="bottom-start"
             >
@@ -160,7 +161,7 @@ export const ChatWidget: React.FC = () => {
                   borderColor: 'text.secondary',
                 }}
               >
-                Powered by Llama
+                Powered by Groq
               </Typography>
             </Tooltip>
           </Box>

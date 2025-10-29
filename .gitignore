@@ -119,7 +119,7 @@ kustomization.yaml
 
 # Vercel
 .vercel
-vercel.json
+# vercel.json - now included for deployment
 
 # Security - API Keys & Secrets (CRITICAL)
 # Never commit files with these patterns
