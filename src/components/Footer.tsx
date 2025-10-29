@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
             © 2024 {resumeData.name}
           </Typography>
           <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mt: 1 }}>
-            Hosted on Azure Kubernetes Service
+            Powered by Groq API • Deployed on Vercel
           </Typography>
           <Typography
             variant="caption"
