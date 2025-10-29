@@ -99,7 +99,7 @@ ${RESUME_CONTEXT}`,
           content: message,
         },
       ],
-      model: 'mixtral-8x7b-32768', // Fast and good quality
+      model: 'llama-3.3-70b-versatile', // Fast and good quality
       temperature: 0.3,
       max_tokens: 500,
     });
