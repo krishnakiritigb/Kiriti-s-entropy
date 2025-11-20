@@ -2,7 +2,7 @@
 
 Full-stack portfolio application with AI-powered chatbot.
 
-**Live Site:** https://kiritientropy.duckdns.org
+**Live Site:** https://kiriti-s-entropy.vercel.app
 
 ## Tech Stack
 
