@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from services.rag_service import get_rag_service
 import os
 from dotenv import load_dotenv
-
+# dkjfbewqljfbewqjfcbewk  nfbckew fbkebknknd setb 
 # Load environment variables
 load_dotenv()
 
